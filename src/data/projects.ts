@@ -7,6 +7,8 @@ export type Project = {
   category: string;
   image: string;
   detail: string;
+  /** Tailwind object-position for the quick-view crop */
+  detailPosition?: string;
   meta: string;
   award?: string;
   description: string;
@@ -61,6 +63,7 @@ export const projects: Project[] = [
     category: "Residential / 30 storeys",
     image: "/images/5050-joyce.jpg",
     detail: "/images/5050-joyce-detail.jpg",
+    detailPosition: "object-[50%_88%]",
     meta: "Residential / Vancouver, BC / 2025",
     description:
       "Built beside Joyce-Collingwood Station, 5050 Joyce contains 256 homes in a 30-storey tower. Its balconies form a quilt-like pattern and trace the outline of Still Creek. Because few floors repeat, the formwork had to adjust as the building rose.",

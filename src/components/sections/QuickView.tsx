@@ -86,7 +86,7 @@ export default function QuickView({ project, onClose }: Props) {
               </motion.p>
 
               <motion.figure custom={2} variants={item} className="relative mt-[26px] aspect-[670/300] overflow-hidden">
-                <Image src={project.detail} alt={`${project.name} at street level`} fill sizes="(min-width: 768px) 670px, 100vw" className="object-cover" />
+                <Image src={project.detail} alt={`${project.name} at street level`} fill sizes="(min-width: 768px) 670px, 100vw" className={`object-cover ${project.detailPosition ?? ""}`} />
                 {project.award && (
                   <figcaption className="absolute right-2.5 bottom-[11px]">
                     <AwardBadge className="w-20" />

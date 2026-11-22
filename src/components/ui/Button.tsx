@@ -3,7 +3,7 @@ import Link from "next/link";
 type Props = {
   href: string;
   children: React.ReactNode;
-  tone?: "dark" | "light" | "outline";
+  tone?: "dark" | "light" | "outline" | "outlineInk";
   className?: string;
 };
 
@@ -11,6 +11,7 @@ const tones = {
   dark: "bg-ink text-paper hover:shadow-[0_14px_30px_-12px_rgb(0_15_20/0.6)]",
   light: "bg-paper text-ink hover:shadow-[0_14px_30px_-12px_rgb(0_0_0/0.45)]",
   outline: "border border-paper/80 text-paper/80 hover:bg-paper hover:text-ink",
+  outlineInk: "border border-ink text-ink hover:bg-ink hover:text-paper",
 };
 
 export default function Button({ href, children, tone = "dark", className = "" }: Props) {

@@ -70,23 +70,22 @@ export default function Footer() {
             sizes="180px"
             className="size-[180px] object-cover"
           />
+          <p className="mt-2.5 text-body text-paper/50">
+            Designed &amp; Developed by{" "}
+            <a
+              href="https://www.nirvanacanada.com/"
+              target="_blank"
+              rel="noopener"
+              className="font-semibold tracking-[-0.03em] text-paper underline-offset-4 transition-opacity hover:underline hover:opacity-80"
+            >
+              NirvanaCanada
+            </a>
+          </p>
         </div>
 
         <Reveal y={60} className="self-end lg:w-[601px] lg:[justify-self:unsafe_end]">
           <Image src="/images/f-logo-big.svg" alt="Carion Construction Ltd." width={601} height={204} className="w-[601px] max-w-full" />
         </Reveal>
-
-        <p className="text-body text-paper/50 lg:col-span-2 lg:mt-[30px]">
-          Designed &amp; Developed by{" "}
-          <a
-            href="https://www.nirvanacanada.com/"
-            target="_blank"
-            rel="noopener"
-            className="text-paper/80 underline-offset-4 transition-colors hover:text-paper hover:underline"
-          >
-            NirvanaCanada
-          </a>
-        </p>
       </div>
     </footer>
   );

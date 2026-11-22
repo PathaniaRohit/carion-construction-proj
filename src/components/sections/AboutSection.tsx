@@ -4,6 +4,7 @@ import Eyebrow from "@/components/ui/Eyebrow";
 import Line from "@/components/ui/Line";
 import Reveal from "@/components/ui/Reveal";
 import RevealImage from "@/components/ui/RevealImage";
+import ScrollRevealText from "@/components/ui/ScrollRevealText";
 import LogoStrip from "./LogoStrip";
 
 const guides = [
@@ -22,10 +23,9 @@ export default function AboutSection() {
     <section id="about" aria-labelledby="about-title" className="mx-auto max-w-[1440px] px-5 pt-[100px] lg:px-[30px]">
       <div className="grid gap-8 lg:grid-cols-[200px_700px_380px] lg:gap-0">
         <Eyebrow>Who we are</Eyebrow>
-        <Reveal as="h2" id="about-title" className="max-w-[600px] text-title text-ink/80">
-          Carion Construction specializes in concrete formwork for high-rise and complex projects across the
-          Lower Mainland.
-        </Reveal>
+        <ScrollRevealText id="about-title" className="max-w-[600px] text-title text-ink/80">
+          Carion Construction specializes in concrete formwork for high-rise and complex projects across the Lower Mainland.
+        </ScrollRevealText>
         <Reveal delay={0.1} className="space-y-[26px] pt-[9px] text-body">
           <p className="max-w-[330px] text-ink/80">
             Carion Construction specializes in concrete formwork for high-rise and complex projects across the

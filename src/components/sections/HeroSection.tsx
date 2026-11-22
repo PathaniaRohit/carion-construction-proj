@@ -51,7 +51,7 @@ export default function HeroSection() {
       ref={ref}
       aria-roledescription="carousel"
       aria-label="Featured projects"
-      className="relative h-svh min-h-[640px] overflow-hidden bg-ink text-paper/80 lg:h-[800px]"
+      className="relative h-svh min-h-[640px] overflow-hidden bg-ink text-paper/80"
     >
       <motion.div style={{ y: imageY }} className="absolute inset-0 isolate">
         <AnimatePresence initial={false}>
